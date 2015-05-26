@@ -1,5 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
 @import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
+@import url('http://fonts.googleapis.com/css?family=Tangerine:400,700|Miltonian|Diplomata');
+@import url('http://fonts.googleapis.com/css?family=Gentium+Book+Basic');
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 /* Override Omega */
@@ -45,7 +47,142 @@
 * --
 **************************************************/
 body {
-  background: #ececec url("../images/bg.png") left top; }
+  background: #ececec url("/sites/all/themes/NewOrleansDamaskSaxony-White.jpg") left top; 
+}
+
+.logo-img #logo{
+height: 200px;
+margin-top: -20px;
+}
+
+
+#region-branding {
+//background: url("http://www.kokoteasalon.com/sites/all/themes/sugar/images/banner3-middle.png") no-repeat scroll 0 0 transparent;
+//height: 80px;
+//margin: 75px 0 0 0;
+//padding: 0 0 0 15px;
+//position: relative;
+//z-index: 99;
+}
+
+
+//Hide commerce Guys banner
+#toolbar-home {
+display: none !important;
+}
+
+
+.zone-branding .region-branding {
+  margin: 50px 0 0 0;
+}
+
+
+/**
+* Navigation
+*/
+.navigation {
+  margin: 0;
+  /* Main menu */
+  /* Secondary menu */ }
+  .navigation .primary-menu ul,
+  .navigation .second-menu ul {
+    margin: 26px 0px; }
+    .navigation .primary-menu ul li.first a,
+    .navigation .second-menu ul li.first a {
+      -moz-border-radius: 8px 0 0 8px;
+      -webkit-border-radius: 8px 0 0 8px;
+      -khtml-border-radius: 8px 0 0 8px;
+      border-radius: 8px 0 0 8px;
+      /* LTR */ }
+    .navigation .primary-menu ul li.last a,
+    .navigation .second-menu ul li.last a {
+      -moz-border-radius: 0 8px 8px 0;
+      -webkit-border-radius: 0 8px 8px 0;
+      -khtml-border-radius: 0 8px 8px 0;
+      border-radius: 0 8px 8px 0;
+      /* LTR */ }
+
+.navigation .primary-menu ul li a {
+      background-color: #000000;
+    color: #FFC0CB !important; //pink
+}
+
+.navigation .primary-menu ul li a.active, .navigation .primary-menu ul li a:hover {
+      background-color: #FFC0CB !important; //pink 
+}
+
+.navigation .primary-menu ul li a.active {
+      color: #FFC0CB;  //pink 
+}
+.navigation .primary-menu ul li a:hover {
+      color: #000000 !important; //black
+}
+
+.navigation .primary-menu a.active-trail.active {
+      color: #000000 !important; //black 
+}
+
+.navigation .second-menu ul li a {
+    background-color: #ffffff;
+    color: #1B78FD !important;  //blue
+}
+
+.navigation .second-menu ul li a.active, .navigation .second-menu ul li a:hover {
+      background-color: #1B78FD !important; //blue 
+}
+.navigation .second-menu ul li a.active {
+      color: #1B78FD;  //blue 
+}
+.navigation .second-menu ul li a:hover {
+      color: #ffffff !important; //white 
+}
+
+.navigation .second-menu a.active-trail.active {
+      color: #ffffff !important; //white 
+}
+
+.navigation .primary-menu ul li a{
+  font-family: 'Tangerine', 'cursive';
+  font-size: 35px;
+  color: #FFC0CB; //pink
+}
+.navigation .second-menu ul li a{
+  font-family: 'Tangerine', 'cursive';
+  font-size: 35px;
+  color: #1B78FD;  //blue
+}
+
+
+#block-views-demo-content-slideshow-block-1 .event-slider .views-field-nothing .field-content, 
+#block-views-demo-content-slideshow-block-1 .view-display-id-block_1 .bx-prev .field-content, 
+#block-views-demo-content-slideshow-block-1 .view-display-id-block_1 .bx-next .field-content{
+  font-family: 'Tangerine', 'cursive';
+  font-size: 35px;
+
+}
+
+.view-collection-products .view-header .taxonomy-title, 
+.view-collection-taxonomy-term .view-header .taxonomy-title {
+  font-family: 'Tangerine', 'cursive';
+  font-size: 50px !important;
+  text-shadow: 2px 2px 8px #6E6E6E;
+}
+
+#zone-branding,
+#zone-menu,
+#zone-content,
+#zone-postscript {
+  padding: 0 10px;
+  background-color: white;
+}
+
+#zone-postscript {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
 
 .responsive-layout-mobile .facetapi-lists {
   display: none; }
